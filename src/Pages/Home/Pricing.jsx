@@ -1,11 +1,8 @@
 import React from 'react';
 import AboutCard from '../../Components/Card/AboutCard';
 import PricingCard from '../../Components/Card/PricingCard';
-
 import SectionHeading from '../../Components/SectionHeading/SectionHeading';
 import priceimg from '../../Assats/images/Pricing/prising.png';
-
-import aboutimg from '../../Assats/images/about/about.png'
 
 
 

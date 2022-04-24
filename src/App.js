@@ -42,5 +42,5 @@ function App() {
     </div>
   );
 }
-{/* <ContactUs/> */}
+
 export default App;
