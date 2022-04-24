@@ -1,0 +1,13 @@
+.galary__slider__wrapper .slick-list {
+    margin: 0px 0px !important;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .service-slider .slick-list {
+        margin: 0px 0px !important;
+    }
+
+}

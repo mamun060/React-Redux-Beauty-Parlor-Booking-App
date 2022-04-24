@@ -1,0 +1,127 @@
+.react-calendar {
+    margin: auto;
+    /* margin-top: 80px; */
+    border: none!important;
+    width: auto !important;
+}
+
+/* off years button link */
+button.react-calendar__navigation__label {
+    pointer-events: none;
+}
+
+/* calendar year month title styling */
+
+button.react-calendar__navigation__label {
+    margin-top: 20px;
+    background-color: #fff;
+    border: none;
+}
+
+span.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+    font-size: 24px;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* calendare main body section */
+.react-calendar__month-view {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* padding: 10px 0px; */
+    border: none;
+    margin-top: -10px;
+}
+
+.react-calendar__month-view__weekdays {
+    background-color: #D69D2B;
+    color: #fff;
+    text-decoration: none;
+    /* padding: 10px 0px; */
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.react-calendar__month-view__days {
+    background-color: #fff;
+}
+
+.react-calendar__navigation {
+    display: flex;
+    height: 44px;
+    margin-bottom: 1em;
+    margin-top: 5px;
+}
+
+button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {
+    width: auto;
+    height: 35px !important;
+    border: none;
+}
+
+button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth:hover {
+    border: 1px solid tomato;
+}
+
+abbr {
+    text-decoration: none!important;
+}
+
+button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend, 
+button.react-calendar__tile.react-calendar__month-view__days__day{
+    width: auto;
+    height: 35px !important;
+    border: none;
+    /* flex: 0 0 10% !important; */
+}
+
+button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend:hover {
+    border: 1px solid tomato;
+}
+
+
+button.react-calendar__tile.react-calendar__month-view__days__day:hover {
+    border: 1px solid tomato;
+}
+
+/* top year button hide */
+
+/* Left button done */
+button.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button {
+    display: none;
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__prev-button {
+    font-size: 45px !important;
+    display: visible;
+}
+/* Right button done */
+button.react-calendar__navigation__arrow.react-calendar__navigation__next-button {
+    display: visible;
+    font-size: 45px !important;
+}
+
+button.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {
+    display: none;
+}
+
+.react-calendar__navigation button{
+    min-width: auto !important;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 667px)  {
+    abbr {
+        font-size: 12px;
+    }
+    span.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+        font-size: 16px;
+    }
+    span.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+        font-size: 14px!important;
+    }
+}
