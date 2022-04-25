@@ -46,13 +46,13 @@ const Header = () => {
                         
                             nav ?
                                 <ul className='mobile-menu-link'>
-                                    <li><Link to={'/'}> Home </Link></li>
-                                    <li><Link to={'/about'}> About us </Link></li>
-                                    <li><Link to={'/service'}> our services </Link></li>
-                                    <li><Link to={'/pricing'}> Pricing </Link></li>
-                                    <li><Link to={'/gallery'}> gallary  </Link></li>
-                                    <li><Link to={'/blog'}> Blog  </Link></li>
-                                    <li><Link to={'/contact-us'}> Contact us  </Link></li>
+                                    <li onClick={()=> setNav(false)}><Link to={'/'}> Home </Link></li>
+                                    <li onClick={()=> setNav(false)}><Link to={'/about'}> About us </Link></li>
+                                    <li onClick={()=> setNav(false)}><Link to={'/service'}> our services </Link></li>
+                                    <li onClick={()=> setNav(false)}><Link to={'/pricing'}> Pricing </Link></li>
+                                    <li onClick={()=> setNav(false)}><Link to={'/gallery'}> gallary  </Link></li>
+                                    <li onClick={()=> setNav(false)}><Link to={'/blog'}> Blog  </Link></li>
+                                    <li onClick={()=> setNav(false)}><Link to={'/contact-us'}> Contact us  </Link></li>
                                 </ul>
                             :
                                 null

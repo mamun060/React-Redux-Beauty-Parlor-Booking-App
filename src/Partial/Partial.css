@@ -44,7 +44,7 @@ nav ul li a:hover{
 .mobile-menu{
     /* display: none; */
     position: relative;
-    z-index: 50000;
+    z-index: 1000;
 }
 
 footer{
@@ -201,7 +201,7 @@ footer{
 
     }
 
-@media screen and  (min-width:480px) and (max-width: 780px){
+@media screen and  (min-width:480px) and (max-width: 767px){
     
      /******* Header Start *******/
      nav, .booking-btn{
@@ -259,4 +259,10 @@ footer{
         justify-content: left;
     }
     
+  }
+
+  @media screen and (min-width:768px){
+    .mobile-menu{
+        display: none;
+    }
   }

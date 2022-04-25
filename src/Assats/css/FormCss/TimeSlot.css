@@ -1,0 +1,91 @@
+.TimeSlotContainer {
+    padding: 10px;
+    height: auto!important;
+    max-height: 400px !important;
+    overflow-y: auto;
+}
+
+.TimeSlotRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+    gap: 0.2rem;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.pb-12{
+    padding-bottom: 12px;
+}
+
+.slot {
+    background-color: transparent;
+    padding: 5px 0px;
+    border-radius: 5px;
+    border: 1px solid var(--text--default--color);
+    cursor: pointer;
+}
+
+.slot:hover {
+    background-color: var(--text--default--color);
+    color: #fff;
+}
+
+.activeSlot {
+    background-color: var(--text--default--color);
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: wavy;
+}
+
+/* 
+.btnOutlineWarn{
+    color: #000;
+    background-color: transparent !important;
+    border-color: var(--text--default--color) !important;
+}
+
+.btnOutlineWarn:hover {
+    color: #fff;
+    background-color: var(--text--default--color) !important;
+    border-color: var(--text--default--color) !important;
+} */
+
+.btnDangerBreak{
+    color: #fff !important;
+    background-color: #d62b39;
+    border-color: #d62b39;
+    font-weight: bold;
+    text-decoration: line-through !important;
+}
+
+.btnDangerBreak:hover{
+    cursor:not-allowed !important;
+    background-color: #d62b39 !important;
+}
+
+
+
+/* @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+
+    .TimeSlotContainer {
+        width: auto;
+        height: auto;
+        overflow: visible;
+        overflow-y: none;
+    }
+} */
+
+@media screen and  (min-width:480px) and (max-width: 767px){
+    .TimeSlotContainer {
+        padding: 10px;
+        height: auto!important;
+        max-height: 300px !important;
+        overflow-y: auto;
+    }
+}

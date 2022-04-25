@@ -19,7 +19,7 @@ button.react-calendar__navigation__label {
 }
 
 span.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
-    font-size: 24px;
+    font-size: 18px;
     padding: 8px 20px;
     background-color: #fff;
     color: #000;
@@ -39,7 +39,7 @@ span.react-calendar__navigation__label__labelText.react-calendar__navigation__la
 }
 
 .react-calendar__month-view__weekdays {
-    background-color: #D69D2B;
+    background-color: var(--text--default--color);
     color: #fff;
     text-decoration: none;
     /* padding: 10px 0px; */
@@ -55,7 +55,7 @@ span.react-calendar__navigation__label__labelText.react-calendar__navigation__la
     display: flex;
     height: 44px;
     margin-bottom: 1em;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {
@@ -97,13 +97,13 @@ button.react-calendar__navigation__arrow.react-calendar__navigation__prev2-butto
 }
 
 button.react-calendar__navigation__arrow.react-calendar__navigation__prev-button {
-    font-size: 45px !important;
+    font-size: 30px !important;
     display: visible;
 }
 /* Right button done */
 button.react-calendar__navigation__arrow.react-calendar__navigation__next-button {
     display: visible;
-    font-size: 45px !important;
+    font-size: 30px !important;
 }
 
 button.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {

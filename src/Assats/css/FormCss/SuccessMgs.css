@@ -1,0 +1,15 @@
+.successContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    color: #000;
+}
+
+.successContainer h2 {
+    font-size: 32px;
+}

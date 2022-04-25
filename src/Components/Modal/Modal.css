@@ -10,7 +10,7 @@ body[data-modal="true"]{
     background-color: #fff;
     position: fixed;
     left: 50%;
-    top: -100%;
+    top: -200%;
     transform: translate(-50%,0%);
     z-index: 11000 !important;
     transition: .500s ease-in-out;
@@ -39,7 +39,9 @@ body[data-modal="true"] .overlay-screen{
     background-color: #fbf3e8;
     padding: 10px;
 }
-
+.ModalHeader h2 {
+    font-size: 18px;
+}
 .ModalFooter {
     display: flex;
     justify-content: space-between;
@@ -73,5 +75,41 @@ body[data-modal="true"] .overlay-screen{
 
 .backicon{
     transform: rotate(-180deg);
+}
+
+.ModalBody{
+    height: 380px;
+    overflow-y: auto;
+}
+
+@media screen and  (min-width:480px) and (max-width: 767px) {
+    .modalContainer {
+        width: 95vw;
+    }
+
+    .ModalBody{
+        height: calc(100vh - 130px);
+        overflow-y: auto;
+    }
+
+    
+    body[data-modal="true"] .modalContainer {
+        top: 15px;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width:479px) {
+    .modalContainer {
+        width: calc(95vw - 20px);
+    }
+
+    .ModalBody{
+        height: calc(100vh - 120px);
+        overflow-y: auto;
+    }
+
+    body[data-modal="true"] .modalContainer {
+        top: 15px;
+    }
 }
 

@@ -1,0 +1,136 @@
+.UserInformationContainer {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.UserInformationContainer h3 {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+.UserInfoWrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+}
+
+
+.FormInputWrapingUser {
+    margin: 10px;
+    padding: inherit;
+    border: 1px solid var(--text--default--color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.FormInputWrapingUser svg {
+    height: 18px;
+    width: 20px;
+    color: #d35400;
+    padding-right: 10px;
+    padding: 2px 0px;
+    margin-right: 5px;
+}
+
+.FormInputWrapingUser input {
+    border: none!important;
+    height: 40px;
+    width: 90%;
+    color: #000;
+    background-color: #fff;
+    outline: none;
+}
+
+.FormInputWrapingUser input::placeholder {
+    padding-left: 10px;
+}
+
+.userInformaitonTable {
+    border: 1px solid var(--text--default--color);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.userInformaitonTable ul li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 6px;
+    line-height: 10px;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+}
+ 
+.userInformaitonTable ul li h6 {
+    font-size: 14px;
+    line-height: 0px;
+    padding: 5px 0px;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.userInformaitonTable .ComingHeading {
+    font-size: 14px;
+    font-size: 400 !important;
+    margin-bottom: 10px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+.userInformaitonTable .UlLiPriceTimeSlot {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.userInformaitonTable .UlLiPriceTimeSlot li svg {
+    height: 20px;
+    width: 25px;
+    margin-left: -4px;
+}
+
+.ChildTimeSlot {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.userInformaitonTable svg {
+    height: 18px;
+    width: 20px;
+    color: #d35400;
+    padding-right: 10px;
+    padding: 2px 0px;
+}
+
+.InfoListView {
+    padding: 5px 0px;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 667px){
+    .userInformaitonTable {
+        border: 1px solid #ecf0f1;
+        padding: 10px 0px 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .userInformaitonTable .ComingHeading {
+        font-size: 14px !important;
+        font-size: 400;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        padding-right: 5px;
+        margin-bottom: 10px;
+    }
+}

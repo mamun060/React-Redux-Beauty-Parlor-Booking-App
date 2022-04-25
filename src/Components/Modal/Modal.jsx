@@ -5,6 +5,8 @@ import {FaTimes} from 'react-icons/fa'
 import {MdOutlineDoubleArrow} from 'react-icons/md'
 import './Modal.css';
 import BookingForm from './BookingForm'
+import UserInformationForm from './UserInformationForm'
+import SuccessMgs from './SuccessMgs'
 
 
 const Modal = () => {
@@ -32,7 +34,7 @@ const Modal = () => {
         setStep(stepper);
     }
 
-    function next(){
+    const next=()=>{
         let stepper = step+1; 
         if(stepper >= 3){
             stepper = 3;
@@ -49,6 +51,15 @@ const Modal = () => {
 
     }
 
+    // switch(step){
+    //     case 1:
+    //         return (<BookingForm />)
+    //      case 2:
+    //          return (<UserInformationForm /> )
+    //      case 3:
+    //          return (  <SuccessMgs />)
+    // }
+
     return (
         <div className='modalContainer'>
             <div className='ModalHeader'>
@@ -57,7 +68,10 @@ const Modal = () => {
             </div>
             <div className='ModalBody'>
                 <div>
-                    <BookingForm />
+                    {/* <BookingForm /> */}
+                    <UserInformationForm />
+                    {/* <SuccessMgs /> */}
+
                 </div>
             </div>
             <div className='ModalFooter'>

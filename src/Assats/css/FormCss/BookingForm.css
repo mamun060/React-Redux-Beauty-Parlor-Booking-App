@@ -1,6 +1,7 @@
 .BookingFormContainer {
     display: grid;
-    grid-template-columns: 60% 40%;
+    /* grid-template-columns: 60% 40%; */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) !important;
     padding: 10px;
 }
 
@@ -30,3 +31,37 @@
     text-align: center;
 }
 
+/* @media screen and  (min-width:280px) and (max-width: 767px) {
+    .BookingFormContainer {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+} */
+
+@media screen and (min-width: 280px) and (max-width:479px) {
+    /* .BookingFormContainer {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+    } */
+
+    .BookingFormContainer {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+        padding: 10px;
+    }
+
+    .SelectorWrap {
+        flex-direction: column !important;
+    }
+
+    .SelectorWrap > div {
+        width: calc(100vw - 70px);
+    }
+
+    .CalendareArea{
+        width: calc(100vw - 60px);
+    }
+}

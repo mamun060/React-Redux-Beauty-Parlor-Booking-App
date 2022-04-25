@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Calendar } from 'react-calendar';
 import Select from 'react-select';
 import './../../Assats/css/FormCss/BookingForm.css';
+import TimeSlots from './TimeSlots';
+
 
 const BookingForm = () => {
     let initDate =  new Date();
@@ -14,6 +16,7 @@ const BookingForm = () => {
 
     return (
         <div className='BookingFormContainer'>
+
             <div className='Calendare-side'>
 
                 <div className='SelectorWrap'>
@@ -41,8 +44,9 @@ const BookingForm = () => {
             </div>
 
             <div className='timeslot-side'>
-                <h2>Time slot area</h2>
+                <TimeSlots />
             </div>
+            
         </div>
     )
 }
