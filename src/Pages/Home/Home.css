@@ -120,13 +120,14 @@
 .back__design{
     width: 100%;
     height: 120px;
-    background-color: #feca7f;
+    background-color: #FEB650;
     border: 2px solid #4c4d4e;
     position: absolute;
-    top: 40%;
+    top: 45%;
     z-index: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .pricing__Wrapper{
    display: flex;
    justify-content: space-between;

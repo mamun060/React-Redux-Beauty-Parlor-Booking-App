@@ -14,7 +14,7 @@ const Modal = () => {
     const status = useSelector(getStatus)
     const dispatch = useDispatch();
     const [step, setStep] = useState(1);
-  
+
 
     useEffect(()=>{
         if(status.show){
@@ -51,15 +51,6 @@ const Modal = () => {
 
     }
 
-    // switch(step){
-    //     case 1:
-    //         return (<BookingForm />)
-    //      case 2:
-    //          return (<UserInformationForm /> )
-    //      case 3:
-    //          return (  <SuccessMgs />)
-    // }
-
     return (
         <div className='modalContainer'>
             <div className='ModalHeader'>
@@ -68,9 +59,31 @@ const Modal = () => {
             </div>
             <div className='ModalBody'>
                 <div>
-                    {/* <BookingForm /> */}
-                    <UserInformationForm />
-                    {/* <SuccessMgs /> */}
+                    {
+                        (() => {
+                            switch(step) {
+                                case 1: {
+                                    return (
+                                        <BookingForm />
+                                    )
+                                }
+                                break;
+                                case 2: {
+                                    return (
+                                        <UserInformationForm />
+                                    )
+                                }
+                                break;
+
+                                case 3: {
+                                    return (
+                                        <SuccessMgs />
+                                    )
+                                }
+                                break;
+                            }
+                        })()  
+                    }
 
                 </div>
             </div>
@@ -81,7 +94,7 @@ const Modal = () => {
                         <button className='btnSteper BtnSubmit' onClick={next}>Continue <MdOutlineDoubleArrow/></button>
                     ):
                     (
-                        <button className='btnSteper BtnSubmit' onClick={handleSubmit}>Submit</button>
+                        <button className='btnSteper BtnSubmit' onClick={handleModal}>Submit</button>
                     )
                 }
                 

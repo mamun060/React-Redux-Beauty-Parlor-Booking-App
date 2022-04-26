@@ -38,12 +38,15 @@
     align-items: center;
     padding: 20px  0px 50px;
 }
+
 .about__content {
   padding-bottom: 50px;
 }
+
 .about__images{
   padding-bottom: 50px;
 }
+
 .about__content > p{
     font-size: 0.8rem;
     font-weight: 300;
@@ -105,4 +108,14 @@
         margin: 0px 0px 100px 10px;
     }
 
-  }
+}
+
+@media screen and (min-width:280px) and (max-width: 479px) {
+    .about__wrapper {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+    .about__images{
+        padding: 40px 0px !important;
+    }
+}

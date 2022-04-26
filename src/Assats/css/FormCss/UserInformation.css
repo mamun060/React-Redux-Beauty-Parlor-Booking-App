@@ -1,7 +1,6 @@
 .UserInformationContainer {
     background-color: #fff;
     padding: 10px;
-    margin: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -16,7 +15,6 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
 }
 
-
 .FormInputWrapingUser {
     margin: 10px;
     padding: inherit;
@@ -25,7 +23,6 @@
     display: flex;
     align-items: center;
 }
-
 
 .FormInputWrapingUser svg {
     height: 18px;
@@ -116,13 +113,22 @@
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 667px){
+    .UserInfoWrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)) !important;
+    }
+
+    .userInformationInput {
+        padding: 1px;
+    }
+    
     .userInformaitonTable {
         border: 1px solid #ecf0f1;
-        padding: 10px 0px 0px;
         margin-right: 0px;
         margin-left: 0px;
         margin-bottom: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 5px !important;
     }
 
     .userInformaitonTable .ComingHeading {

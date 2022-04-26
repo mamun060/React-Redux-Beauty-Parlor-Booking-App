@@ -137,7 +137,7 @@ footer{
     }
     /******* Header Ends *******/
     .logo img {
-        width: 150px;
+        width: 120px !important;
         height: auto;
     }
     /****** mobile-menu Start ******/
@@ -185,7 +185,7 @@ footer{
         padding: 15px 0px;
     }
     .footer__logo{
-        width: 150px;
+        width: 150px !important;
         height: auto;
     }
     .footer_about_text {
@@ -197,6 +197,10 @@ footer{
         display: flex;
         -ms-flex-pack: center;
         justify-content: left;
+    }
+
+    .header{
+        height: 80px;
     }
 
     }
